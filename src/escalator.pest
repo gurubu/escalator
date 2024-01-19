@@ -1,0 +1,9 @@
+add = {"+"}
+sub = {"-"}
+mul = {"*"}
+div = {"/"}
+opr = _{add|sub|mul|div}
+xpr = {num~opr~num}
+num = @{ASCII_DIGIT+}
+trm = _{num|xpr}
+prg = {SOI~xpr~EOI}
