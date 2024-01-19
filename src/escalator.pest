@@ -6,4 +6,5 @@ opr = _{add|sub|mul|div}
 xpr = {num~opr~num}
 num = @{ASCII_DIGIT+}
 trm = _{num|xpr}
+wrd = @{ASCII_ALPHA+}
 prg = {SOI~xpr~EOI}
